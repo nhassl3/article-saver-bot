@@ -1,0 +1,4 @@
+.env
+.idea
+.git
+go_build_github_com_nhassl3_article_saver_bot_cmd_article_saver_bot
