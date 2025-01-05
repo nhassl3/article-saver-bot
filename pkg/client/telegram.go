@@ -2,13 +2,14 @@ package client
 
 import (
 	"encoding/json"
-	"github.com/nhassl3/article-saver-bot/pkg/e"
-	"github.com/nhassl3/article-saver-bot/pkg/entities"
 	"io"
 	"net/http"
 	"net/url"
 	"path"
 	"strconv"
+
+	"github.com/nhassl3/article-saver-bot/pkg/e"
+	"github.com/nhassl3/article-saver-bot/pkg/entities"
 )
 
 const (

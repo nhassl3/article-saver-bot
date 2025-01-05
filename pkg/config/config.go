@@ -3,10 +3,11 @@ package config
 import (
 	"errors"
 	"fmt"
+	"os"
+
 	"github.com/joho/godotenv"
 	"github.com/nhassl3/article-saver-bot/pkg/e"
 	"gopkg.in/yaml.v2"
-	"os"
 )
 
 var ErrToGetEnvVariable = errors.New("error to ger environment variable")

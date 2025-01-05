@@ -1,12 +1,13 @@
 package main
 
 import (
+	"log"
+
 	"github.com/nhassl3/article-saver-bot/pkg/client"
 	"github.com/nhassl3/article-saver-bot/pkg/config"
 	eventConsumer "github.com/nhassl3/article-saver-bot/pkg/consumer/event-consumer"
 	"github.com/nhassl3/article-saver-bot/pkg/events/telegram"
 	"github.com/nhassl3/article-saver-bot/pkg/storage/files"
-	"log"
 )
 
 func main() {

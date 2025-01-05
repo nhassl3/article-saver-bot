@@ -3,8 +3,9 @@ package storage
 import (
 	"crypto/sha1"
 	"fmt"
-	"github.com/nhassl3/article-saver-bot/pkg/e"
 	"io"
+
+	"github.com/nhassl3/article-saver-bot/pkg/e"
 )
 
 type Storage interface {

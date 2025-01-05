@@ -1,9 +1,10 @@
 package event_consumer
 
 import (
-	"github.com/nhassl3/article-saver-bot/pkg/events"
 	"log"
 	"time"
+
+	"github.com/nhassl3/article-saver-bot/pkg/events"
 )
 
 type Consumer struct {

@@ -2,6 +2,7 @@ package telegram
 
 import (
 	"errors"
+
 	"github.com/nhassl3/article-saver-bot/pkg/client"
 	"github.com/nhassl3/article-saver-bot/pkg/e"
 	"github.com/nhassl3/article-saver-bot/pkg/entities"

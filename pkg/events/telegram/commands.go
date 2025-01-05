@@ -3,13 +3,14 @@ package telegram
 import (
 	"errors"
 	"fmt"
+	"log"
+	"net/url"
+	"strings"
+
 	"github.com/nhassl3/article-saver-bot/pkg/client"
 	"github.com/nhassl3/article-saver-bot/pkg/e"
 	"github.com/nhassl3/article-saver-bot/pkg/storage"
 	"github.com/nhassl3/article-saver-bot/pkg/storage/files"
-	"log"
-	"net/url"
-	"strings"
 )
 
 const (
@@ -41,7 +42,7 @@ func (p *Proc) doCmd(cmd, username string, chatId int) error {
 			log.Printf("failed to send help menu: %s", err)
 		}
 	case StartCmd:
-		if err := p.SendRandom(chatId, username); err != nil {
+		if err := sendMsg(msgHello); err != nil {
 			log.Printf("failed to send start menu: %s", err)
 		}
 	default:
